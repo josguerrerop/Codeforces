@@ -1,0 +1,38 @@
+package model;
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package ListasColasPilas;
+
+/**
+ *
+ * @author Marco
+ */
+public class Nodo {
+    Object datos;
+    Nodo siguienteNodo;
+
+    public Nodo(Object objeto)
+    {
+        this(objeto, null);
+    }
+    
+    public Nodo(Object objeto, Nodo nodo)
+    {
+        datos= objeto;
+        siguienteNodo = nodo;
+    }
+
+    public Object obtenerObjeto()
+    {
+        return datos;
+    }
+
+    //devolver referencia al siguiente nodo en la lista
+    public Nodo obtenerSiguiente()
+    {
+        return siguienteNodo;
+    }
+    
+}

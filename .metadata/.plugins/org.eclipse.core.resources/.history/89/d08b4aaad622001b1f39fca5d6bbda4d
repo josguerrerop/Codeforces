@@ -1,0 +1,21 @@
+package Twenti7th;
+
+import java.util.Scanner;
+
+public class trial {
+public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	int arr [] = {1,5,10,20};
+	int c = sc.nextInt();
+     int sum=0;
+     while(sum<=c) {
+    	 for(int i=arr.length;i<=0;i--) {
+    		 if(arr[i]<c) {
+    			 sum+=arr[i];
+    			 i++;
+    		 }
+    	 }
+     }
+     System.out.println(sum);
+}
+}
